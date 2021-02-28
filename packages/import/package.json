@@ -1,13 +1,12 @@
 {
-  "name": "@graphql-tools/import",
-  "version": "6.2.6",
+  "name": "@piglovesyou/patched-graphql-tools-import",
+  "version": "0.1.1",
   "description": "A set of utils for faster development of GraphQL tools",
   "repository": {
     "type": "git",
     "url": "ardatan/graphql-tools",
     "directory": "packages/import"
   },
-  "author": "Dotan Simha <dotansimha@gmail.com>",
   "license": "MIT",
   "sideEffects": false,
   "main": "dist/index.cjs.js",
