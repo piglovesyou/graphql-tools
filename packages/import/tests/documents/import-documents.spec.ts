@@ -55,7 +55,7 @@ describe('import in documents', () => {
       processImport('./import-test/default/a.graphql', __dirname, undefined, visitedFiles);
       const relativePaths = Array.from(visitedFiles.keys())
         .map(absPath => relative(__dirname, absPath))
-        .map(relPath => relPath.replace(/\\\\/, '\/'))
+        .map(relPath => relPath.replace(/\\\\/g, '\/'))
       expect(relativePaths).toStrictEqual([
         "import-test/default/a.graphql",
         "import-test/default/b.graphql",
